@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { 
   Hospital, 
   Eye , 
@@ -9,10 +11,14 @@ import {
   Tablets,
   ArrowRight,
   Clock,
-  HeartPulse
+  HeartPulse,
+  Baby,
+  Laugh,
+  
 } from "lucide-react";
 
 const Services = () => {
+  const [showAdditional, setShowAdditional] = useState(false);
   const services = [
     {
       icon: Hospital,
@@ -55,7 +61,30 @@ const Services = () => {
      description: "Encouraging life-saving blood donations through organized camps, safe collection practices, and community awareness programs.",
      features: ["Voluntary Donation Camps", "Blood Group Testing", "Safe Storage & Handling"],
      availability: "24/7 Available",
-    },
+    }
+  ];
+  const AdditionalData = [
+  {
+  icon: Stethoscope,
+  title: "Dental Care",
+  description: "Comprehensive dental services for oral hygiene, cavity treatment, tooth extraction, and preventive care to ensure a healthy smile.",
+  features: ["Oral Health Checkup","Tooth Extraction","Mouth Ulcer Management"],
+  availability: "Mon-Sat 9AM-5PM",
+},
+{
+  icon: Baby,
+  title: "Gynecology & Obstetrics",
+  description: "Complete women’s health services covering prenatal care, childbirth, menstrual disorders, and hormonal issues with compassionate expertise.",
+  features: ["Pregnancy Care","Menstrual Disorder Treatment","Ultrasound & Fetal Monitoring",],
+  availability: "Mon-Sat 10AM-6PM",
+},
+{
+  icon: Laugh,
+  title: "Dermatology",
+  description: "Expert skin care solutions for acne, eczema, fungal infections, pigmentation, and cosmetic dermatology to keep your skin healthy.",
+  features: ["Acne & Scar Treatment","Skin Allergy & Eczema","Fungal Infection Management",],
+  availability: "Mon-Sat 11AM-5PM",
+}
   ];
 
   return (
@@ -102,17 +131,51 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full group">
-                  Learn More
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+
+                
+                
               </CardContent>
             </Card>
           ))}
         </div>
 
+        {showAdditional  && (
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    {AdditionalData.map((service, index) => (
+      <Card key={index} className="group hover:shadow-card-medical transition-all duration-300 hover:-translate-y-1">
+        <CardHeader>
+          <div className="flex items-start justify-between">
+            <div className="p-3 bg-gradient-medical rounded-lg group-hover:shadow-glow transition-all duration-300">
+              <service.icon className="h-6 w-6 text-primary-foreground" />
+            </div>
+            <div className="flex items-center gap-1 text-xs text-accent font-medium">
+              <Clock className="h-3 w-3" />
+              {service.availability}
+            </div>
+          </div>
+          <CardTitle className="text-xl">{service.title}</CardTitle>
+          <CardDescription className="text-muted-foreground">
+            {service.description}
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <ul className="space-y-2">
+            {service.features.map((feature, featureIndex) => (
+              <li key={featureIndex} className="flex items-center gap-2 text-sm">
+                <div className="w-1.5 h-1.5 bg-accent rounded-full" />
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+)}
+
         <div className="text-center mt-12">
-          <Button variant="medical" size="lg">
+          <Button variant="medical" size="lg"
+           onClick={() => setShowAdditional(!showAdditional)}>
             View All Services
             <ArrowRight className="h-4 w-4" />
           </Button>
