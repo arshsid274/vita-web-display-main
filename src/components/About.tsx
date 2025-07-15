@@ -41,9 +41,7 @@ const About = () => {
                 Leading Healthcare Excellence in India
               </h2>
               <p className="text-lg text-muted-foreground">
-                For over 25 years, Apollo HealthCare has been at the forefront of medical innovation 
-                in India. We combine international standards of care with Indian values of 
-                compassion, delivering world-class healthcare that's accessible to all.
+                Amin Welfare Trust is dedicated to leading healthcare excellence in India by providing free primary healthcare, promoting health awareness, and supporting marginalized communities with compassionate medical services that foster a healthier and happier society.
               </p>
             </div>
 

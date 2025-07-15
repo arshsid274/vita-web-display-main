@@ -1,57 +1,58 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
-  Heart, 
-  Brain, 
-  Bone, 
-  Eye, 
+  Hospital, 
+  Eye , 
+  TestTubes ,  
   Stethoscope, 
-  Activity,
+  Bone,
+  Tablets,
   ArrowRight,
-  Clock
+  Clock,
+  HeartPulse
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Heart,
-      title: "Cardiology & CTVS",
-      description: "Comprehensive heart care with advanced cardiac surgery and interventional procedures.",
-      features: ["Cardiac Surgery", "Angioplasty", "Pacemaker Implantation"],
-      availability: "24/7 Emergency",
-    },
-    {
-      icon: Brain,
-      title: "Neurosciences",
-      description: "Advanced neurological care with cutting-edge technology and expert specialists.",
-      features: ["Neurosurgery", "Stroke Unit", "Epilepsy Management"],
-      availability: "24/7 Emergency",
-    },
-    {
-      icon: Bone,
-      title: "Orthopedics & Joint Replacement",
-      description: "Complete bone and joint care with minimally invasive surgical techniques.",
-      features: ["Knee/Hip Replacement", "Arthroscopy", "Trauma Care"],
+      icon: Hospital,
+      title: " Hospital Camp",
+     description: "Community-focused healthcare camps providing vaccinations, general checkups, and health awareness sessions for underserved populations.",
+      features: ["Vaccine Camp", "In House Camp", "Awareness Camp"],
       availability: "24/7 Emergency",
     },
     {
       icon: Eye,
-      title: "Gastroenterology",
-      description: "Advanced digestive care with endoscopic procedures and liver treatments.",
-      features: ["Endoscopy", "Liver Transplant", "IBD Treatment"],
+      title: "Eye Care",
+     description: "Comprehensive eye care services including cataract surgery, glaucoma treatment, and advanced retina diagnostics and procedures.",
+     features: ["Cataract Surgery", "Glaucoma Treatment", "Retina Services"],
+      availability: "24/7 Emergency",
+    },
+    {
+      icon: TestTubes,
+      title: "Lab",
+     description: "Comprehensive diagnostic services including pathology, biochemistry, and imaging for accurate and timely results.",
+      features: ["Pathology Testing", "Biochemistry Analysis", "Radiology & Imaging"],
+      availability: "24/7 Emergency",
+    },
+    {
+      icon: Tablets,
+      title: "Medical Store",
+     description: "Well-stocked pharmacy offering prescription medicines, OTC drugs, and health supplements to support complete patient care.",
+     features: ["Prescription Medicines", "Over-the-Counter Drugs", "Health Supplements"],
       availability: "Mon-Sat 9AM-6PM",
     },
     {
-      icon: Stethoscope,
-      title: "Oncology",
-      description: "Comprehensive cancer care with latest treatment protocols and support.",
-      features: ["Chemotherapy", "Radiation Therapy", "Surgical Oncology"],
+      icon: Bone,
+      title: "Ortho",
+      description: "Specialized orthopedic care offering advanced treatments for joint replacement, sports injuries, and trauma management.",
+      features: ["Knee/Hip Replacement", "Arthroscopy", "Trauma Care"],
       availability: "Mon-Sat 8AM-6PM",
     },
     {
-      icon: Activity,
-      title: "Emergency Medicine",
-      description: "Round-the-clock emergency care with advanced trauma capabilities.",
+      icon:HeartPulse ,
+     description: "Encouraging life-saving blood donations through organized camps, safe collection practices, and community awareness programs.",
+features: ["Voluntary Donation Camps", "Blood Group Testing", "Safe Storage & Handling"],
       features: ["Trauma Center", "Critical Care", "Emergency Surgery"],
       availability: "24/7 Available",
     },
