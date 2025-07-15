@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, Users, Heart } from "lucide-react";
 import hospitalHero from "@/assets/hospital-hero.jpg";
+import Gallery14 from "../assets/Gallery1 (14).jpg"
 
 const Hero = () => {
   return (
@@ -67,9 +68,9 @@ const Hero = () => {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl shadow-medical">
             <img
-              src={hospitalHero}
+              src={Gallery14}
               alt="Apollo HealthCare - Modern Multi-Specialty Hospital in India"
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[600px] object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
           </div>
