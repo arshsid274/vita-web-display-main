@@ -5,7 +5,7 @@ import vinaygupta from "../assets/Doc/dr-ajay-kumar-kriplani-1299.png";
 import asifaijaz from "../assets/Doc/dr-anil-saxena-27.jpg";
 import shalinisrivastava from "../assets/Doc/dr-anil-mandhani-4722.jpg";
 import rahulmishra from "../assets/Doc/dr-ajay-kaul-6323.jpg";
-import mohitkhatri from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+import arvindkumar from "../assets/Doc/dr-arvind-kumar-11636.jpg";
 import faizalzubair from "../assets/Doc/dr-ajay-kaul-6323.jpg";
 import sunita from "../assets/Doc/dr-ajay-kaul-6323.jpg";
 import raptitrivadei from "../assets/Doc/dr-ajay-kaul-6323.jpg";
@@ -58,7 +58,7 @@ const doctors = [
     location: "Noida",
     specialty: "Skin Care",
     experience: "30 Years",
-    image: rahulmishra,
+    image: arvindkumar,
   }
 ];
 
