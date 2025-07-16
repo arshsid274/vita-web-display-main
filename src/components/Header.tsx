@@ -21,12 +21,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="p-2 h-16 w-16 rounded-lg">
+            <div className="p-2 sm:h-22 md:h-18 lg:h-16 w-16 rounded-lg">
               {/* <Logo className="h-6 w-6 text-primary-foreground" /> */}
               <img src={Logo1} alt="" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-Black">Chaudhary Ehsaan Kareem Hospital</h1>
+              <h1 className=" sm:text-sm md:text-xl text-2xl font-bold text-Black">Chaudhary Ehsaan Kareem Hospital</h1>
               {/* <p className="text-xs text-muted-foreground">Multi-Specialty Hospital</p> */}
             </div>
           </div>

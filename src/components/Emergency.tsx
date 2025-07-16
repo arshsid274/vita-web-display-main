@@ -35,7 +35,7 @@ const Emergency = () => {
               <MapPin className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2">Location</h3>
               <p className="text-xl mb-2 text-primary ">
-                Noida,Kanpur,Luckhnow
+                Noida,Kanpur,Lucknow
                
               </p>
               <Button variant="outline" size="sm">
