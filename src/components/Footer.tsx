@@ -15,7 +15,7 @@ const Footer = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-black uppercase">Chaudhary Ehsan </h1>
-                <p className="text-sm opacity-80 text-black pl-8 uppercase">Kareem Hospital</p>
+                <p className="text-xl font-bold text-black  uppercase">Kareem Hospital</p>
               </div>
             </div>
             <p className="text-sm opacity-80">
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                info@Chaudhary Ehsan Kareemhealthcare.in
+                hospitalehsan@gmail.com
               </div>
             </div>
           </div>

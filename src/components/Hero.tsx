@@ -55,7 +55,7 @@ const Hero = () => {
           <div className="flex items-center gap-6 pt-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Users className="h-4 w-4" />
-             F.C.R.A. Reg. No.: 136530037 (July, 12th 1994)
+             F.C.R.A. Reg. No.: 136530037 (January, 12th 1994)
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Shield className="h-4 w-4" />
