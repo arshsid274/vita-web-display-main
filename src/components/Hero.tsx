@@ -45,10 +45,10 @@ const Hero = () => {
               Book Appointment
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="emergency" size="lg">
+            {/* <Button variant="emergency" size="lg">
               <Clock className="h-4 w-4" />
               24/7 Emergency
-            </Button>
+            </Button> */}
           </div>
 
           {/* Trust Indicators */}
