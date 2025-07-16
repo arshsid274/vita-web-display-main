@@ -54,9 +54,9 @@ const doctors = [
   },
   {
     name: "Dr. Rahul Mishra",
-    title: "Dermatologist",
+    title: "Dental Surgeon",
     location: "Noida",
-    specialty: "Skin Care",
+    specialty: "Oral Health",
     experience: "30 Years",
     image: arvindkumar,
   }
