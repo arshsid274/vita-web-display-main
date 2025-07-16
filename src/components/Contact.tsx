@@ -41,7 +41,7 @@ const Contact = () => {
             Get in Touch
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Contact Chaudhary Ehsan Kareem Hospital 
+            Chaudhary Ehsan Kareem Hospital 
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Have questions about our services or need to book an appointment? 
