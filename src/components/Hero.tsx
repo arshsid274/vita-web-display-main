@@ -70,7 +70,7 @@ const Hero = () => {
             <img
               src={Gallery14}
               alt="Chaudhary Ehsaan Kareem HealthCare - Modern Multi-Specialty Hospital in India"
-              className="w-full h-[600px] object-contain"
+              className="w-full h-[200px] md:h-[600px] object-contain"
             />
             <div className="absolute inset-0 " />
           </div>
