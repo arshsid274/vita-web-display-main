@@ -1,5 +1,6 @@
 import { Heart, MapPin, Phone, Mail, Clock } from "lucide-react";
-import Logo1 from "../assets/HospitalLogo.png"
+
+import Logo2 from "../assets/logo2.png"
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="p-2  rounded-lg h-16 w-16">
-               <img src={Logo1} alt="" />
+               <img src={Logo2} alt="" />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-black">Chaudhary Ehsaan </h1>

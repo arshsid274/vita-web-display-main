@@ -75,7 +75,7 @@ const Doctor = () => {
             <img src={doc.image} alt={doc.name} className="w-24 h-24 rounded-full object-cover mb-4" />
             <h3 className="text-lg font-semibold text-center">{doc.name}</h3>
             <p className="text-sm text-gray-600 text-center">{doc.title}</p>
-            <p className="text-sm text-gray-500 mb-2 text-center">{doc.location}</p>
+            {/* <p className="text-sm text-gray-500 mb-2 text-center">{doc.location}</p> */}
             <p className="text-sm italic text-center">{doc.specialty}</p>
             <div className="mt-2 text-center">
               {/* <p className="font-semibold">{doc.experience}</p> */}
