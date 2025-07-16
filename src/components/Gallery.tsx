@@ -35,7 +35,7 @@ function Gallery() {
         console.log('lightGallery has been initialized');
     };
     return (
-        <div className="container mx-auto md:px-4 py-8">
+        <div id="gallery" className="container mx-auto md:px-4 py-8">
             <LightGallery
                 onInit={onInit}
                 speed={500}

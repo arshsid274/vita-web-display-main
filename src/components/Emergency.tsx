@@ -25,7 +25,7 @@ const Emergency = () => {
             <CardContent className="p-6 text-center">
               <Phone className="h-12 w-12 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Emergency Helpline</h3>
-              <p className="text-3xl font-bold mb-2">+91 98765 43210</p>
+              <p className="text-3xl font-bold mb-2">+91 9335596042</p>
               <p className="text-sm opacity-90">Available 24x7</p>
             </CardContent>
           </Card>

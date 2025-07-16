@@ -69,7 +69,7 @@ const Hero = () => {
           <div className="relative overflow-hidden rounded-2xl ">
             <img
               src={Gallery14}
-              alt="Apollo HealthCare - Modern Multi-Specialty Hospital in India"
+              alt="Chaudhary Ehsaan Kareem HealthCare - Modern Multi-Specialty Hospital in India"
               className="w-full h-[600px] object-contain"
             />
             <div className="absolute inset-0 " />

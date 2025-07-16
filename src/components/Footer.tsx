@@ -29,11 +29,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                +91 124 456 7890
+                +91 9335596042
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                info@apollohealthcare.in
+                info@Chaudhary Ehsaan Kareemhealthcare.in
               </div>
             </div>
           </div>
@@ -44,7 +44,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><a href="#home" className="opacity-80 hover:opacity-100 transition-opacity">Home</a></li>
               <li><a href="#services" className="opacity-80 hover:opacity-100 transition-opacity">Services</a></li>
-              <li><a href="#doctors" className="opacity-80 hover:opacity-100 transition-opacity">Our Doctors</a></li>
+              <li><a href="#doctors" className="opacity-80 hover:opacity-100 transition-opacity">Doctors</a></li>
+              <li><a href="#gallery" className="opacity-80 hover:opacity-100 transition-opacity">Gallery</a></li>
               <li><a href="#about" className="opacity-80 hover:opacity-100 transition-opacity">About Us</a></li>
               <li><a href="#contact" className="opacity-80 hover:opacity-100 transition-opacity">Contact</a></li>
             </ul>
@@ -54,11 +55,14 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Medical Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><span className="opacity-80">Emergency Care</span></li>
-              <li><span className="opacity-80">Cardiology & CTVS</span></li>
-              <li><span className="opacity-80">Neurosciences</span></li>
-              <li><span className="opacity-80">Orthopedics</span></li>
-              <li><span className="opacity-80">Oncology</span></li>
+              <li><span className="opacity-80">Hospital Camp</span></li>
+              <li><span className="opacity-80">Eye Care</span></li>
+              <li><span className="opacity-80">Lab</span></li>
+              <li><span className="opacity-80">Otho</span></li>
+              <li><span className="opacity-80">Blood Donation</span></li>
+              <li><span className="opacity-80">Dental Care </span></li>
+              <li><span className="opacity-80">Gynecology & Obstetrics</span></li>
+              <li><span className="opacity-80">Dermatology</span></li>
             </ul>
           </div>
 
@@ -72,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="p-4 bg-accent/20 rounded-lg">
                 <p className="font-semibold text-accent-foreground">Emergency Helpline</p>
-                <p className="text-lg font-bold">+91 98765 43210</p>
+                <p className="text-lg font-bold">+91 9335596042</p>
               </div>
               <p className="text-xs opacity-70">
                 For life-threatening emergencies, call 108 (National Ambulance Service) immediately.

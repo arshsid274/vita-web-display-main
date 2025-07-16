@@ -1,65 +1,70 @@
-import majinderSandhu from "../assets/Doc/dr-(col)-manjinder-sandhu-11494 (1).png";
+import manishnigam from "../assets/Doc/dr-(col)-manjinder-sandhu-11494 (1).png";
+import rajivkakkad from "../assets/Doc/dr-ajit-singh-narula-1066.jpg";
+import suhasan from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+import vinaygupta from "../assets/Doc/dr-ajay-kumar-kriplani-1299.png";
+import asifaijaz from "../assets/Doc/dr-anil-saxena-27.jpg";
+import shalinisrivastava from "../assets/Doc/dr-anil-mandhani-4722.jpg";
+import rahulmishra from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+import mohitkhatri from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+import faizalzubair from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+import sunita from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+import raptitrivadei from "../assets/Doc/dr-ajay-kaul-6323.jpg";
+
 
 const doctors = [
   {
-    name: "Dr. Narayan Hulse",
-    title: "PRINCIPAL DIRECTOR ORTHOPAEDICS",
-    location: "Fortis BG Road",
-    specialty: "Orthopaedics | Joint Replacement | Robotic and Computer navigated Joint reconstruction",
+    name: "Dr. Manish Nigam",
+    title: "Psychiatrist",
+    location: "Kanpur",
+    specialty: "Mental Health",
     experience: "21 Years",
-    
-    image: majinderSandhu, // Replace with correct image
+    image: manishnigam, // Replace with correct image
   },
   {
-    name: "Dr. Naresh Kumar Goyal",
-    title: "PRINCIPAL DIRECTOR & HOD CARDIOLOGY & HEART FAILURE PROGRAMME",
-    location: "Fortis Shalimar Bagh",
-    specialty: "Cardiac Sciences | Interventional Cardiology",
+    name: "Dr. Rajeev Kakkad",
+    title: "Dermatologist",
+    location: "Kanpur/Noida",
+    specialty: "Dermatology | Skin & Hair Treatments",
     experience: "18 Years",
-   
-    image: majinderSandhu,
+    image: rajivkakkad,
   },
   {
-    name: "Dr. Nishith Chandra",
-    title: "PRINCIPAL DIRECTOR CARDIOLOGY",
-    location: "Fortis Okhla",
-    specialty: "Cardiac Sciences | Interventional Cardiology",
+    name: "Dr. Su Hasan",
+    title: "General Physician",
+    location: "Kanpur",
+    specialty: "Internal Medicine",
     experience: "30 Years",
-   
-    image: majinderSandhu,
+    image: suhasan,
   },
   {
-    name: "Dr. Nishith Chandra",
-    title: "PRINCIPAL DIRECTOR CARDIOLOGY",
-    location: "Fortis Okhla",
-    specialty: "Cardiac Sciences | Interventional Cardiology",
+    name: "Dr. Asif Aijaz",
+    title: "Eye Specialist",
+    location: "Kanpur",
+    specialty: "Ophthalmology | Eye Care",
     experience: "30 Years",
-   
-    image: majinderSandhu,
+    image: asifaijaz,
   },
   {
-    name: "Dr. Nishith Chandra",
-    title: "PRINCIPAL DIRECTOR CARDIOLOGY",
-    location: "Fortis Okhla",
-    specialty: "Cardiac Sciences | Interventional Cardiology",
+    name: "Dr. Shalini Srivastava",
+    title: "Gynecologist & Obstetrician",
+    location: "Lucknow | Noida",
+    specialty: "Gynecology | Obstetrics",
     experience: "30 Years",
-   
-    image: majinderSandhu,
+    image: shalinisrivastava,
   },
   {
-    name: "Dr. Nishith Chandra",
-    title: "PRINCIPAL DIRECTOR CARDIOLOGY",
-    location: "Fortis Okhla",
-    specialty: "Cardiac Sciences | Interventional Cardiology",
+    name: "Dr. Rahul Mishra",
+    title: "Dermatologist",
+    location: "Noida",
+    specialty: "Skin Care",
     experience: "30 Years",
-   
-    image: majinderSandhu,
-  },
+    image: rahulmishra,
+  }
 ];
 
 const Doctor = () => {
   return (
-    <div className="my-8 px-8 md:px-28 ">
+    <div id="doctors" className="my-8 px-8 container mx-auto px-4 ">
       <div className="bg-gradient-trust rounded-2xl p-8 text-primary-foreground">
         <h2 className="text-center text-2xl font-bold">Our Doctors</h2>
       </div>
@@ -73,7 +78,7 @@ const Doctor = () => {
             <p className="text-sm text-gray-500 mb-2 text-center">{doc.location}</p>
             <p className="text-sm italic text-center">{doc.specialty}</p>
             <div className="mt-2 text-center">
-              <p className="font-semibold">{doc.experience}</p>
+              {/* <p className="font-semibold">{doc.experience}</p> */}
               
             </div>
             {/* <div className="flex gap-2 mt-4">

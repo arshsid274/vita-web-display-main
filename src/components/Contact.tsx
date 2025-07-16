@@ -100,9 +100,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
                     <p className="text-muted-foreground">
-                      Main: +91 124 456 7890<br />
-                      Emergency: +91 98765 43210<br />
-                      Appointments: +91 124 456 7891
+                      Main: +91 998 456 78690<br />
+                      Emergency: +91 9335596042<br />
+                      Appointments: +91 9335596042
                     </p>
                   </div>
                 </div>

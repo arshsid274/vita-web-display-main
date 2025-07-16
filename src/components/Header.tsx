@@ -51,7 +51,7 @@ const Header = () => {
               Emergency: +91 98765 43210
             </a> */}
             <Button variant="appointment" size="sm">
-              Emergency: +91 98765 43210
+              Emergency: +91 9335596042
             </Button>
           </div>
 
