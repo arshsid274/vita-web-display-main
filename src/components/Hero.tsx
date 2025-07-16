@@ -66,17 +66,17 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl shadow-medical">
+          <div className="relative overflow-hidden rounded-2xl ">
             <img
               src={Gallery14}
               alt="Apollo HealthCare - Modern Multi-Specialty Hospital in India"
               className="w-full h-[600px] object-contain"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+            <div className="absolute inset-0 " />
           </div>
           
           {/* Floating Card */}
-          <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-card-medical">
+          {/* <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-card-medical">
             <div className="flex items-center gap-3">
               <div className="p-3 bg-accent/10 rounded-lg">
                 <Heart className="h-6 w-6 text-accent" />
@@ -86,7 +86,7 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">Board-certified physicians</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -34,9 +34,9 @@ const Emergency = () => {
             <CardContent className="p-6 text-center">
               <MapPin className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2">Location</h3>
-              <p className="text-muted-foreground mb-2">
-                Sector 15, Gurgaon<br />
-                Haryana - 122001, India
+              <p className="text-xl mb-2 text-primary ">
+                Noida,Kanpur,Luckhnow
+               
               </p>
               <Button variant="outline" size="sm">
                 Get Directions
@@ -64,10 +64,10 @@ const Emergency = () => {
               <Phone className="h-4 w-4" />
               Call Emergency
             </Button>
-            <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
+            {/* <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
               <Ambulance className="h-4 w-4" />
               Request Ambulance
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

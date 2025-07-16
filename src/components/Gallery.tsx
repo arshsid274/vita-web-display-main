@@ -35,12 +35,12 @@ function Gallery() {
         console.log('lightGallery has been initialized');
     };
     return (
-        <div className="App">
+        <div className="container mx-auto px-4 py-8">
             <LightGallery
                 onInit={onInit}
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
-                elementClassNames="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 ]"
+                elementClassNames="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-24 "
             >
                 <a href={Gallery1}>
                     <img alt="Gallery1" src={Gallery1} className="w-full h-48 object-cover rounded-lg" />
