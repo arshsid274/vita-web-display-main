@@ -35,7 +35,7 @@ const About = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <Heart className="h-4 w-4" />
-                About Chaudhary Ehsaan Kareem Hospital
+                About Chaudhary Ehsan Kareem Hospital
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                 Leading Healthcare Excellence in India

@@ -26,7 +26,7 @@ const Header = () => {
               <img src={Logo2} alt="" />
             </div>
             <div>
-              <h1 className=" sm:text-sm md:text-xl text-2xl font-bold text-Black">Chaudhary Ehsaan Kareem Hospital</h1>
+              <h1 className="  text-xl md:text-2xl font-bold text-Black uppercase">Chaudhary Ehsan Kareem Hospital</h1>
               {/* <p className="text-xs text-muted-foreground">Multi-Specialty Hospital</p> */}
             </div>
           </div>
