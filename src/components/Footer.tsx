@@ -1,5 +1,5 @@
 import { Heart, MapPin, Phone, Mail, Clock } from "lucide-react";
-
+import Logo1 from "../assets/HospitalLogo.png"
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -9,22 +9,23 @@ const Footer = () => {
           {/* Hospital Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="p-2 bg-primary-foreground/10 rounded-lg">
-                <Heart className="h-6 w-6" />
+              <div className="p-2  rounded-lg h-16 w-16">
+               <img src={Logo1} alt="" />
               </div>
               <div>
-                <h1 className="text-xl font-bold">Apollo HealthCare</h1>
-                <p className="text-sm opacity-80">Multi-Specialty Hospital</p>
+                <h1 className="text-xl font-bold text-black">Chaudhary Ehsaan </h1>
+                <p className="text-sm opacity-80 text-black pl-8">Kareem Hospital</p>
               </div>
             </div>
             <p className="text-sm opacity-80">
               Providing world-class healthcare services with international standards 
-              and Indian values of compassion for over 25 years.
+              and Indian values of compassion for over 29 years.
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                Sector 15, Gurgaon, Haryana - 122001
+                
+                Amarpali Zodiac,Sector 120,Noida, Uttar pradesh - 201301
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
@@ -84,7 +85,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p className="opacity-80">
-              © 2024 Apollo HealthCare. All rights reserved.
+              © 2025 Chaudhary Ehsan Kareem Hospital. All rights reserved.
             </p>
             <div className="flex gap-6 opacity-80">
               <a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a>
