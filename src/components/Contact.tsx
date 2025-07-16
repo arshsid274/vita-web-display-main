@@ -4,8 +4,34 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import React from "react";
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "ef7eae11-1c1e-4edc-904f-c8787c7af461"); // Replace with your actual key
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -15,7 +41,7 @@ const Contact = () => {
             Get in Touch
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Contact Apollo HealthCare
+            Contact Chaudhary Ehsaan Kareem Hospital 
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Have questions about our services or need to book an appointment? 
@@ -35,9 +61,29 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Visit Us</h3>
                     <p className="text-muted-foreground">
-                      Apollo HealthCare Hospital<br />
-                      Sector 15, Golf Course Road<br />
-                      Gurgaon, Haryana - 122001<br />
+                      Amarpali Zodiac <br />
+                      Sector 120,<br />
+                      Noida, Uttar pradesh - 201301<br />
+                      India
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-gradient-medical rounded-lg">
+                    <MapPin className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Visit Us</h3>
+                    <p className="text-muted-foreground">
+                    
+                      Purani Chungi <br />
+                      Jajmau<br />
+                      Kanpur, Uttar pradesh - 208010<br />
                       India
                     </p>
                   </div>
@@ -91,48 +137,62 @@ const Contact = () => {
                   Fill out the form below and we'll get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="Enter your first name" />
+              <form onSubmit={onSubmit}>
+                <CardContent className="space-y-6">
+                  {result && (
+                    <div className={`p-4 rounded-lg text-center ${
+                      result === "Form Submitted Successfully" 
+                        ? "bg-green-100 text-green-800" 
+                        : "bg-blue-100 text-blue-800"
+                    }`}>
+                      {result}
+                    </div>
+                  )}
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="firstName">First Name</Label>
+                      <Input id="firstName" name="firstName" placeholder="Enter your first name" required />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="lastName">Last Name</Label>
+                      <Input id="lastName" name="lastName" placeholder="Enter your last name" required />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Enter your last name" />
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Email</Label>
+                      <Input id="email" name="email" type="email" placeholder="Enter your email" required />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="phone">Phone</Label>
+                      <Input id="phone" name="phone" type="tel" placeholder="Enter your phone number" />
+                    </div>
                   </div>
-                </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="Enter your email" />
+                    <Label htmlFor="subject">Subject</Label>
+                    <Input id="subject" name="subject" placeholder="What is this regarding?" required />
                   </div>
+
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input id="phone" type="tel" placeholder="Enter your phone number" />
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea 
+                      id="message" 
+                      name="message"
+                      placeholder="Tell us how we can help you..." 
+                      className="min-h-[120px]"
+                      required
+                    />
                   </div>
-                </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="What is this regarding?" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell us how we can help you..." 
-                    className="min-h-[120px]"
-                  />
-                </div>
-
-                <Button variant="medical" size="lg" className="w-full">
-                  <Send className="h-4 w-4" />
-                  Send Message
-                </Button>
-              </CardContent>
+                  <Button variant="medical" size="lg" className="w-full" type="submit">
+                    <Send className="h-4 w-4" />
+                    Send Message
+                  </Button>
+                </CardContent>
+              </form>
             </Card>
           </div>
         </div>

@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Award, Users, Heart, Shield, ArrowRight } from "lucide-react";
+import { Building , Users, Heart, Shield, ArrowRight } from "lucide-react";
 
 const About = () => {
   const achievements = [
     {
-      icon: Award,
-      title: "NABH Accreditation",
-      description: "National quality standards"
+      icon: Building,
+      title: "Expanding Nationwide",
+      description: "Quality, Reach, Trust"
     },
     {
       icon: Users,
@@ -35,13 +35,13 @@ const About = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <Heart className="h-4 w-4" />
-                About Apollo HealthCare
+                About Chaudhary Ehsaan Kareem Hospital
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                 Leading Healthcare Excellence in India
               </h2>
               <p className="text-lg text-muted-foreground">
-                Amin Welfare Trust is dedicated to leading healthcare excellence in India by providing free primary healthcare, promoting health awareness, and supporting marginalized communities with compassionate medical services that foster a healthier and happier society.
+              Amin Welfare Trust is an NGO-based organization dedicated to leading healthcare excellence in India by providing free primary healthcare, promoting health awareness, and supporting marginalized communities with compassionate medical services that foster a healthier and happier society.
               </p>
             </div>
 
@@ -76,10 +76,10 @@ const About = () => {
               </ul>
             </div>
 
-            <Button variant="medical" size="lg">
+            {/* <Button variant="medical" size="lg">
               Learn More About Us
               <ArrowRight className="h-4 w-4" />
-            </Button>
+            </Button> */}
           </div>
 
           {/* Achievements Grid */}
