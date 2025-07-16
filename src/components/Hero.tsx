@@ -33,10 +33,10 @@ const Hero = () => {
               <div className="text-2xl font-bold text-primary">100+</div>
               <div className="text-sm text-muted-foreground">Specialist Doctors</div>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="text-2xl font-bold text-primary">24/7</div>
               <div className="text-sm text-muted-foreground">Emergency Care</div>
-            </div>
+            </div> */}
           </div>
 
           {/* CTA Buttons */}
@@ -45,7 +45,10 @@ const Hero = () => {
               Book Appointment
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-           
+            <Button variant="emergency" size="lg">
+              <Clock className="h-4 w-4" />
+              24/7 Emergency
+            </Button>
           </div>
 
           {/* Trust Indicators */}
