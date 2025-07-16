@@ -40,7 +40,7 @@ function Gallery() {
                 onInit={onInit}
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
-                elementClassNames="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:px-24 "
+                elementClassNames="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:px-2 "
             >
                 <a href={Gallery1}>
                     <img alt="Gallery1" src={Gallery1} className="w-full h-48 object-cover rounded-lg" />
