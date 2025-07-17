@@ -12,7 +12,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    Clarity.init("rmxrrnlzc6"); // Replace with your actual Clarity Project ID
+    Clarity.init("sg8pvr02q6"); // Replace with your actual Clarity Project ID
   }, []);
 
   return (
