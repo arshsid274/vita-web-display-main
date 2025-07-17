@@ -61,7 +61,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Visit Us</h3>
                     <p className="text-muted-foreground">
-                      Amarpali Zodiac <br />
+                      Amrapali Zodiac <br />
                       Sector 120,<br />
                       Noida, Uttar pradesh - 201301<br />
                       India
